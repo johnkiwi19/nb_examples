@@ -11,6 +11,7 @@ package john.org.examples01.file_nio_stuff;
 public class C01PathEaxmple {
 
     public C01PathEaxmple() {
+        System.out.println("Class ::: "+this.getClass().getName());
     }
     
 }
