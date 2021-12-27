@@ -11,6 +11,7 @@ package john.org.examples01.file_nio_stuff;
 public class MyNio_examples {
 
     public MyNio_examples() {
+        System.out.println("This is a class for nio exapmles ");
         
     }
     
