@@ -8,11 +8,9 @@ package john.org.examples01.file_nio_stuff;
  *
  * @author john
  */
-public class MyNio_examples {
+public class C01PathEaxmple {
 
-    public MyNio_examples() {
-        System.out.println("This is a class for nio exapmles ");
-        new C01PathEaxmple();
+    public C01PathEaxmple() {
     }
     
 }
