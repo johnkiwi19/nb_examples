@@ -13,6 +13,7 @@ import john.org.examples01.file_nio_stuff.MyNio_examples;
 public class AAAMain {
 
     public AAAMain() {
+        System.out.print("Class ::: "+this.getClass().getName()+" ");
         System.out.println("Hi From Examples ");
         new MyNio_examples();
     }
