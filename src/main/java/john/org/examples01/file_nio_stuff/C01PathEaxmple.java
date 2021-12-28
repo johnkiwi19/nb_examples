@@ -16,14 +16,14 @@ public class C01PathEaxmple {
 
     public C01PathEaxmple() {
         System.out.println("Class ::: " + this.getClass().getName());
-
+        System.out.println("");
         Path p = Paths.get("/home/john/aaa/junk/my.txt");
 
 //        information_about_The_Path();
-        using_An_Itterator(p);
         gettint_The_Root_and_Parrent(p);
         getting_The_File_Name(p);
         information(p);
+        using_An_Itterator(p);
     }
 
 
@@ -36,12 +36,14 @@ public class C01PathEaxmple {
         System.out.format("getName(2):      %s%n", p.getName(0));
         System.out.format("subpath(1,3):    %s%n", p.subpath(1, 3));
         System.out.format("getNameCount:    %d%n", p.getNameCount());
+        System.out.println("");
     }
 
     private void gettint_The_Root_and_Parrent(Path p) {
         String name = new Object() {
         }.getClass().getEnclosingMethod().getName();
-        System.out.println("Function ::" + name);
+        System.out.format("Function ::      %s%n" , name);
+        System.out.format("The File         %s%n" ,p);
         System.out.format("getRoot:         %s%n", p.getRoot());
         System.out.format("getParent:       %s%n", p.getParent());
         System.out.println("");
