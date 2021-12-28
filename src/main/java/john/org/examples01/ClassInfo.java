@@ -12,7 +12,7 @@ public class ClassInfo {
 
     String s;
     Object t;
-
+    boolean show;
     
     public ClassInfo() {
 
@@ -21,11 +21,15 @@ public class ClassInfo {
     public ClassInfo(Object t) {
         this.t = t;
         showClass(t);
+        this.show = true;
         
     }
 
     private void showClass(Object t1) {
-        System.out.println("" + t1.getClass().getCanonicalName());
+        if (show){
+        System.out.println("Class    :: " + t1.getClass().getCanonicalName());
+        }
     }
+    
 
 }
