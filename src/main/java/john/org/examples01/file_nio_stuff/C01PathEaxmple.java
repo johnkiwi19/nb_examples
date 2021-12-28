@@ -19,7 +19,6 @@ public class C01PathEaxmple {
         System.out.println("");
         Path p = Paths.get("/home/john/aaa/junk/my.txt");
 
-//        information_about_The_Path();
         gettint_The_Root_and_Parrent(p);
         getting_The_File_Name(p);
         information(p);
@@ -30,7 +29,7 @@ public class C01PathEaxmple {
     private void information(Path p) {
         String name = new Object() {
         }.getClass().getEnclosingMethod().getName();
-        System.out.println("Function ::" + name);
+        System.out.println("### Function ::" + name);
         
         System.out.format("toString:        %s%n", p.toString());
         System.out.format("getName(2):      %s%n", p.getName(0));
@@ -42,7 +41,7 @@ public class C01PathEaxmple {
     private void gettint_The_Root_and_Parrent(Path p) {
         String name = new Object() {
         }.getClass().getEnclosingMethod().getName();
-        System.out.format("Function ::      %s%n" , name);
+        System.out.format("### Function ::      %s%n" , name);
         System.out.format("The File         %s%n" ,p);
         System.out.format("getRoot:         %s%n", p.getRoot());
         System.out.format("getParent:       %s%n", p.getParent());
@@ -52,8 +51,7 @@ public class C01PathEaxmple {
     private void using_An_Itterator(Path p) {
         String name = new Object() {
         }.getClass().getEnclosingMethod().getName();
-        System.out.println("Function ::" + name);
-        System.out.println("### Using and ittrator");
+        System.out.println("### Function ::" + name);
         System.out.print("Itorator     ");
         int i = 0;
         for (Iterator iterator = p.iterator(); iterator.hasNext();) {
@@ -66,7 +64,8 @@ public class C01PathEaxmple {
     private void getting_The_File_Name(Path p) {
         String name = new Object() {
         }.getClass().getEnclosingMethod().getName();
-        System.out.println("Function ::" + name);
+        System.out.format("### Function   ::" + name);
+        System.out.format("getFileName:     %s%n", p);
         System.out.format("getFileName:     %s%n", p.getFileName());
         System.out.println("");
     }
