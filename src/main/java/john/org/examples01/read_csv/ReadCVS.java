@@ -22,10 +22,16 @@ public class ReadCVS {
         try {
              read = new BufferedReader(new FileReader(name));
              while((line = read.readLine()) != null){
-                 String[] row = line.split(',');
+                 String[] row = line.split(",");
+                 for(String index : row){
+                     System.out.format("%s ",index);
+                 }
+                 System.out.println("");
              }
         } catch (Exception e) {
+            e.printStackTrace();
         } finally {
+            read.close();
         }
 
     }
