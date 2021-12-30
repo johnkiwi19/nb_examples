@@ -15,12 +15,11 @@ public class ReadCVS {
 
     public ReadCVS() {
         System.out.println("This class will reatd a cvs file");
-        
+
         String name = "student.csv";
-        BufferedReader read = null; 
-        
+        BufferedReader read = null;
+        String line = "";
+
     }
-    
-    
-    
+
 }
