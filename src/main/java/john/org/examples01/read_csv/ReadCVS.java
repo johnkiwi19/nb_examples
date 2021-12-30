@@ -20,7 +20,9 @@ public class ReadCVS {
         BufferedReader read = null;
         String line = "";
         try {
-            
+             read = new BufferedReader(new FileReader(name));
+             
+             
         } catch (Exception e) {
         } finally {
         }
