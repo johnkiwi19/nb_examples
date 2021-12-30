@@ -19,6 +19,11 @@ public class ReadCVS {
         String name = "student.csv";
         BufferedReader read = null;
         String line = "";
+        try {
+            
+        } catch (Exception e) {
+        } finally {
+        }
 
     }
 
