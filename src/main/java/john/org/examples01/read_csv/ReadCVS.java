@@ -21,8 +21,9 @@ public class ReadCVS {
         String line = "";
         try {
              read = new BufferedReader(new FileReader(name));
-             
-             
+             while((line = read.readLine()) != null){
+                 String[] row = line.split(',');
+             }
         } catch (Exception e) {
         } finally {
         }
