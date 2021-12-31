@@ -5,7 +5,13 @@
 package john.org.examples01.read_csv;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 /**
  *
@@ -14,26 +20,20 @@ import java.io.FileReader;
 public class ReadCVS {
 
     public ReadCVS() {
-        System.out.println("This class will reatd a cvs file");
-
-        String name = "student.csv";
-        BufferedReader read = null;
-        String line = "";
         try {
-             read = new BufferedReader(new FileReader(name));
-             while((line = read.readLine()) != null){
-                 String[] row = line.split(",");
-                 for(String index : row){
-                     System.out.format("%s ",index);
-                 }
-                 System.out.println("");
-             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            read.close();
+            System.out.println("This class will reatd a cvs file");
+            
+            Path path = Paths.get("student.csv");
+            
+            
+            BufferedReader reader = Files.newBufferedReader(path);
+            String line = reader.readLine();
+            System.out.println(line);
+        } catch (IOException ex) {
+            Logger.getLogger(ReadCVS.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        
+        
     }
 
 }

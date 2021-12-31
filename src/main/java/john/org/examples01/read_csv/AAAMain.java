@@ -11,6 +11,7 @@ package john.org.examples01.read_csv;
 public class AAAMain {
     public static void main(String[] args) {
         System.out.println("The main file for Reading a cvs file");
+        new ReadCVS();
     }
     
 }

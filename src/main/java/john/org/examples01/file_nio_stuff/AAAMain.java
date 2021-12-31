@@ -11,6 +11,7 @@ package john.org.examples01.file_nio_stuff;
 public class AAAMain {
     public static void main(String[] args) {
         System.out.println("The Path class");
+        new C01PathEaxmple();
     }
     
 }
